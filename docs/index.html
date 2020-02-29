@@ -5,6 +5,8 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script>
 
+d3 = require("d3@5")
+
 height = 600
 
 data = {
@@ -12,8 +14,6 @@ data = {
   const randomY = d3.randomNormal(height / 2, 80);
   return Array.from({length: 2000}, () => [randomX(), randomY()]);
 }
-
-d3 = require("d3@5")
 
 chart = {
   const svg = d3.create("svg")
